@@ -1,0 +1,26 @@
+HKCR
+{
+	HWCVDLL2.aspHWCV.1 = s 'cHWCV Class'
+	{
+		CLSID = s '{B4CF6355-DBD1-47CF-A296-2358D551C690}'
+	}
+	HWCVDLL2.aspHWCV = s 'cHWCV Class'
+	{		
+		CurVer = s 'HWCVDLL2.aspHWCV.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B4CF6355-DBD1-47CF-A296-2358D551C690} = s 'cHWCV Class'
+		{
+			ProgID = s 'HWCVDLL2.aspHWCV.1'
+			VersionIndependentProgID = s 'HWCVDLL2.aspHWCV'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{FC552832-4C05-43B6-9204-23C7BC570893}'
+			Version = s '1.0'
+		}
+	}
+}

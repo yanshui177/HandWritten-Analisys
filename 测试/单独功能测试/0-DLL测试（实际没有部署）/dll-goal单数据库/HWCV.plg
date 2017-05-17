@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HWCV - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ãÆË§Ë§\AppData\Local\Temp\RSPEA13.tmp" with contents
+[
+FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cxcore.lib cv.lib ml.lib cvaux.lib highgui.lib cvcam.lib /nologo /dll /incremental:no /pdb:"Release/HWCV.pdb" /machine:I386 /def:".\HWCV.def" /out:"Release/HWCV.dll" /implib:"Release/HWCV.lib" 
+".\Release\DBop.obj"
+".\Release\HWCV.OBJ"
+".\Release\path.obj"
+".\Release\segmentation.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @"C:\Users\ãÆË§Ë§\AppData\Local\Temp\RSPEA13.tmp""
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/HWCV.lib and object Release/HWCV.exp
+Creating command line "bscmake.exe /nologo /o"Release/HWCV.bsc"  ".\Release\DBop.sbr" ".\Release\HWCV.SBR" ".\Release\path.sbr" ".\Release\segmentation.sbr" ".\Release\StdAfx.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+HWCV.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+HKCR
+{
+	HWCV_COM.aspHWCV.1 = s 'FirstClass Class'
+	{
+		CLSID = s '{32CC3D5B-B2E0-4EE6-ACB5-E1D9BA02A7D2}'
+	}
+	HWCV_COM.aspHWCV = s 'FirstClass Class'
+	{		
+		CurVer = s 'HWCV_COM.aspHWCV.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {32CC3D5B-B2E0-4EE6-ACB5-E1D9BA02A7D2} = s 'FirstClass Class'
+		{
+			ProgID = s 'HWCV_COM.aspHWCV.1'
+			VersionIndependentProgID = s 'HWCV_COM.aspHWCV'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{7513ABA9-4042-4541-833D-38310E463C8F}'
+			Version = s '1.0'
+		}
+	}
+}

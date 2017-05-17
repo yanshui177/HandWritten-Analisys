@@ -1,0 +1,59 @@
+// HWCVDLL2.idl : HWCVDLL2 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(HWCVDLL2.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(a817e7a2-43fa-11d0-9e44-00aa00b6770a),
+	dual,	
+	pointer_default(unique)
+]
+interface _cHWCV : IDispatch
+{
+	[id(1)]	HRESULT Attach([in] BSTR bstrPath);
+	[id(2)]	HRESULT RegisterAll();
+	[id(3)]	HRESULT UnregisterAll();
+	[id(4)]	HRESULT GetComponents([out] SAFEARRAY(BSTR)* pbstrCLSIDs, [out] SAFEARRAY(BSTR)* pbstrDescriptions);
+	[id(5)]	HRESULT RegisterComponent([in] BSTR bstrCLSID);
+	[id(6)] HRESULT UnregisterComponent([in] BSTR bstrCLSID);
+};
+
+[
+	object,
+	uuid(E49365D0-22E5-4606-84FB-21337B4B13E6),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IcHWCV : IDispatch{
+	[id(1)] HRESULT aspHWCV([in] BSTR filepath, [out, retval] BSTR* _arg2);
+};
+[
+	uuid(FC552832-4C05-43B6-9204-23C7BC570893),
+	version(1.0),
+	custom(a817e7a1-43fa-11d0-9e44-00aa00b6770a,"{CA35E0FE-B922-44CF-9AE1-49EDE515632F}")
+]
+library HWCVDLL2Lib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(CA35E0FE-B922-44CF-9AE1-49EDE515632F)		
+	]
+	coclass CompReg
+	{
+		[default] interface _cHWCV;
+	};
+	[
+		uuid(B4CF6355-DBD1-47CF-A296-2358D551C690)		
+	]
+	coclass cHWCV
+	{
+		[default] interface IcHWCV;
+	};
+};
+

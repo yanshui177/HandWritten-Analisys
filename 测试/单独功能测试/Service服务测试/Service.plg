@@ -1,0 +1,19 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Service - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib user32.lib advapi32.lib /nologo /incremental:yes /pdb:"Debug/Service.pdb" /debug /machine:I386 /out:"Debug/Service.exe" /pdbtype:sept  .\Debug\Main.obj .\Debug\Service.obj .\Debug\Stdafx.obj "
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Service.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,59 @@
+// HWCV_COM.idl : HWCV_COM 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(HWCV_COM.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(a817e7a2-43fa-11d0-9e44-00aa00b6770a),
+	dual,	
+	pointer_default(unique)
+]
+interface IComponentRegistrar : IDispatch
+{
+	[id(1)]	HRESULT Attach([in] BSTR bstrPath);
+	[id(2)]	HRESULT RegisterAll();
+	[id(3)]	HRESULT UnregisterAll();
+	[id(4)]	HRESULT GetComponents([out] SAFEARRAY(BSTR)* pbstrCLSIDs, [out] SAFEARRAY(BSTR)* pbstrDescriptions);
+	[id(5)]	HRESULT RegisterComponent([in] BSTR bstrCLSID);
+	[id(6)] HRESULT UnregisterComponent([in] BSTR bstrCLSID);
+};
+
+[
+	object,
+	uuid(7918500F-A60F-4587-B528-846A186B775B),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFirstClass : IDispatch{
+	[id(1)] HRESULT Check([in] BSTR stuNum, [out, retval] BSTR* result);
+};
+[
+	uuid(7513ABA9-4042-4541-833D-38310E463C8F),
+	version(1.0),
+	custom(a817e7a1-43fa-11d0-9e44-00aa00b6770a,"{42D03418-BE85-46CA-B3D9-D26C45CAC1D5}")
+]
+library HWCV_COMLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(42D03418-BE85-46CA-B3D9-D26C45CAC1D5)		
+	]
+	coclass CompReg
+	{
+		[default] interface IComponentRegistrar;
+	};
+	[
+		uuid(32CC3D5B-B2E0-4EE6-ACB5-E1D9BA02A7D2)		
+	]
+	coclass FirstClass
+	{
+		[default] interface IFirstClass;
+	};
+};
+

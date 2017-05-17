@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HWCV - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\闫帅帅\AppData\Local\Temp\RSP7DE8.tmp" with contents
+[
+/nologo /G4 /Gz /Zp4 /MD /W3 /GX /O2 /I "OpenCV\cv\include" /I "OpenCV\otherlibs\highgui" /I "OpenCV\cxcore\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HWCV_EXPORTS" /U "OpenCV\\lib" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\CODE\HWCV\dll-goal完整版\DBop.cpp"
+]
+Creating command line "cl.exe @"C:\Users\闫帅帅\AppData\Local\Temp\RSP7DE8.tmp"" 
+Creating temporary file "C:\Users\闫帅帅\AppData\Local\Temp\RSP7DE9.tmp" with contents
+[
+FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cxcore.lib cv.lib ml.lib cvaux.lib highgui.lib cvcam.lib /nologo /dll /incremental:no /pdb:"Release/HWCV.pdb" /machine:I386 /def:".\HWCV.def" /out:"Release/HWCV.dll" /implib:"Release/HWCV.lib" 
+".\Release\DBop.obj"
+".\Release\HWCV.OBJ"
+".\Release\path.obj"
+".\Release\process.obj"
+".\Release\segmentation.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @"C:\Users\闫帅帅\AppData\Local\Temp\RSP7DE9.tmp""
+<h3>Output Window</h3>
+Compiling...
+DBop.cpp
+d:\code\hwcv\dll-goal完整版\release\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Program Files\vc\VC98\INCLUDE\vector(48) : warning C4786: '??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@IABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@ABV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+C:\Program Files\vc\VC98\INCLUDE\vector(61) : warning C4786: '??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0ABV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+C:\Program Files\vc\VC98\INCLUDE\vector(103) : warning C4786: '?rbegin@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE?AV?$reverse_iterator@PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@AAV12@PAV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+C:\Program Files\vc\VC98\INCLUDE\vector(105) : warning C4786: '?rbegin@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QBE?AV?$reverse_iterator@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@ABV12@PBV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+C:\Program Files\vc\VC98\INCLUDE\vector(107) : warning C4786: '?rend@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE?AV?$reverse_iterator@PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@AAV12@PAV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+C:\Program Files\vc\VC98\INCLUDE\vector(108) : warning C4786: '?rend@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QBE?AV?$reverse_iterator@PBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@ABV12@PBV12@H@2@XZ' : identifier was truncated to '255' characters in the browser information
+        D:\CODE\HWCV\dll-goal完整版\DBop.h(55) : see reference to class template instantiation 'std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' being compiled
+Linking...
+   Creating library Release/HWCV.lib and object Release/HWCV.exp
+Creating command line "bscmake.exe /nologo /o"Release/HWCV.bsc"  ".\Release\DBop.sbr" ".\Release\HWCV.SBR" ".\Release\path.sbr" ".\Release\process.sbr" ".\Release\segmentation.sbr" ".\Release\StdAfx.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+HWCV.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

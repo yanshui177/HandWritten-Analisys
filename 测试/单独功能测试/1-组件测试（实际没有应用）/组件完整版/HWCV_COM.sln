@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWCV_COM", "HWCV_COM\HWCV_COM.vcxproj", "{15622D72-0927-49F5-819C-7C33183AEADF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWCV_COMPS", "HWCV_COM\HWCV_COMPS.vcxproj", "{22BFA07B-8CDC-4666-826D-281861647086}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15622D72-0927-49F5-819C-7C33183AEADF} = {15622D72-0927-49F5-819C-7C33183AEADF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15622D72-0927-49F5-819C-7C33183AEADF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15622D72-0927-49F5-819C-7C33183AEADF}.Debug|Win32.Build.0 = Debug|Win32
+		{15622D72-0927-49F5-819C-7C33183AEADF}.Release|Win32.ActiveCfg = Release|Win32
+		{15622D72-0927-49F5-819C-7C33183AEADF}.Release|Win32.Build.0 = Release|Win32
+		{22BFA07B-8CDC-4666-826D-281861647086}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22BFA07B-8CDC-4666-826D-281861647086}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
