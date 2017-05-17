@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: handwriting - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\闫帅帅\AppData\Local\Temp\RSP9F62.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/handwriting.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\CODE\HWCV\测试\转换图像文件到jpg\segmentation.cpp"
+]
+Creating command line "cl.exe @"C:\Users\闫帅帅\AppData\Local\Temp\RSP9F62.tmp"" 
+Creating temporary file "C:\Users\闫帅帅\AppData\Local\Temp\RSP9F63.tmp" with contents
+[
+FreeImage.lib cxcore.lib cv.lib ml.lib cvaux.lib highgui.lib cvcam.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/handwriting.pdb" /debug /machine:I386 /out:"Debug/handwriting.exe" /pdbtype:sept 
+".\Debug\binary.obj"
+".\Debug\Cjbsb.obj"
+".\Debug\getFiles.obj"
+".\Debug\getFloders.obj"
+".\Debug\getType.obj"
+".\Debug\gif2ipl.obj"
+".\Debug\read_scanf.obj"
+".\Debug\searchDir.obj"
+".\Debug\segmentation.obj"
+".\Debug\singlefeature.obj"
+]
+Creating command line "link.exe @"C:\Users\闫帅帅\AppData\Local\Temp\RSP9F63.tmp""
+<h3>Output Window</h3>
+Compiling...
+segmentation.cpp
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(43) : warning C4101: 'end' : unreferenced local variable
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(44) : warning C4101: 'cost' : unreferenced local variable
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(60) : warning C4101: 'ii' : unreferenced local variable
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(60) : warning C4101: 'jj' : unreferenced local variable
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(60) : warning C4101: 'j' : unreferenced local variable
+d:\code\hwcv\测试\转换图像文件到jpg\segmentation.cpp(83) : warning C4101: 'x' : unreferenced local variable
+c:\program files\vc\vc98\include\vector(39) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+c:\program files\vc\vc98\include\vector(60) : warning C4786: 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+Linking...
+
+
+
+<h3>Results</h3>
+handwriting.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
