@@ -10,6 +10,8 @@ tmp/
 *.tmp
 *.bak
 *.swp
+*.tlog
+*.idb
 *~.nib
 local.properties
 .classpath
@@ -43,8 +45,6 @@ local.properties
 
 # Build results
 
-[Dd]ebug/
-[Rr]elease/
 x64/
 build/
 [Bb]in/
@@ -214,3 +214,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+部署版本/主程序-主函数版本/HWCV-exe/Debug/vc120.idb
