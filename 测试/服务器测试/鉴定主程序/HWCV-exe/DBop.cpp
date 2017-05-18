@@ -137,13 +137,16 @@ int DbUpdate(string stuNum,	vector<string> dateVec,	vector<string> subjectVec,	v
 
 	/*更新字串设置*/
 	int count = subjectVec.size();
+
 	vector<string> sqlKC; //课程表：作弊第一字段
 	int ci = 0;	//循环
-
-
-	/*构造更新语句*/
+	string flag = "0";
+	/*构造更新语句--KC表的更新 */
 	for (ci = 0; ci < count; ++ci)
 	{
+		if(flagVec[ci]=="1") // 此人若有作弊嫌疑的图像，就认定此人为作弊嫌疑
+			flag = "1";
+
 		/*作弊的*/
 		string  sqlKC1 = "UPDATE ";
 		sqlKC1 += g_db_hoster_zk;
@@ -160,7 +163,11 @@ int DbUpdate(string stuNum,	vector<string> dateVec,	vector<string> subjectVec,	v
 
 		sqlKC.push_back(sqlKC1);
 	}
-
+	/* 更新语句--视图更新 */
+	string sqlView = "UPDATE YANNSY.V_BYSQ_BJSH_JQ_KS SET BJSH_JG_JQ=";
+	sqlView += flag;
+	sqlView += "WHERE KS_ZKZ = ";
+	sqlView += stuNum;
 	::CoInitialize(NULL);//初始化com组件
 
 	/*更新数据库表*/
@@ -181,6 +188,11 @@ int DbUpdate(string stuNum,	vector<string> dateVec,	vector<string> subjectVec,	v
 				adLockOptimistic,
 				adCmdText);
 		}
+		p_recordset->Open(_bstr_t(sqlView.c_str()),//更新第二条
+			p_conn.GetInterfacePtr(),
+			adOpenStatic,
+			adLockOptimistic,
+			adCmdText);		
 	}
 	catch (_com_error e){ return 0; cerr << "Err:"; }
 
